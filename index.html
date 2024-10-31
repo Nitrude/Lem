@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #0070ba;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 5px;
+        }
+        .button:hover {
+            background-color: #005b8a;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Dashboard</h1>
+    <p>Click the buttons below to navigate:</p>
+   
+    <a href="https://github.com/Nitrude/Lem" class="button" target="_blank">Github</a>
+    <a href="https://id.quicklaunch.io/ncc" class="button" target="_blank">MyNCC</a>
+    <a href="https://docs.google.com/document/d/1pVL9w1XvDLyq9jNab3ufjnbke1ToycWQeXk8ohR2KH0/edit?tab=t.0" class="button" target="_blank">Notes</a>
+    <a href="https://chatgpt.com/" class="button" target="_blank">ChatGPT</a>
+ 
+
+
+    <script>
+      // Select all buttons
+        const buttons = document.querySelectorAll('.button');
+        buttons.forEach(button => {
+          button.addEventListener('click', () => {
+            console.log(`${button.textContent} button clicked!`);
+          });
+        });
+    </script>
+</body>
+</html>
